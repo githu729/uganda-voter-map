@@ -1,3 +1,6 @@
+const geojsonPath = "data/uganda_districts.geojson";
+const csvPath = "data/Uganda_Voter_Count_2021_With_Code.csv";
+
 const map = L.map('map').setView([1.3733, 32.2903], 6);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -85,3 +88,4 @@ function addLegend() {
   };
   legend.addTo(map);
 }
+
